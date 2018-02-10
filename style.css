@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Istok+Web");
+
+body {
+  font-family: 'Istok Web', sans-serif;
+}
+
+#nav-bar {
+  position: fixed;
+  z-index:1;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 1px 30px rgba(48, 67, 82, 0.2);
+  height: 58px;
+  background: #304352; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #304352, #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #304352, #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#main {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: calc(220% - 58px);
+  background: #304352;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav-el a {
+  font-size: 24px;
+  color: #273642;
+  text-decoration: none;
+  line-height: 58px;
+}
+
+.nav-el a:hover,
+.nav-el a:active,
+.nav-el a:focus {
+  text-decoration: line-through;
+  color: #273642;
+  text-decoration-color: #405360;
+}
+
+.col {
+  padding: 0;
+  width: 33.3%;
+  /* display:flex;
+  justify-content:center; */
+}
+
+.pic {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.par {
+  color: #273642;
+}
+
+.pic img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
